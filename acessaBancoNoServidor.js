@@ -6,10 +6,10 @@ const acessaBancoNoServidor = mysql.createConnection({
     port: 3306,
     user: 'alunos',
     password: 'senhaAlunos',
-    database: 'api_crud' // Ajuste o nome do banco de dados conforme necessário
+    database: 'api_crud' // confirme que o nome do seu banco é esse
 });
 
-// Conectar ao banco de dados
+// Testar conexão
 acessaBancoNoServidor.connect((err) => {
     if (err) {
         console.error('Erro ao conectar ao banco de dados:', err);
@@ -18,5 +18,5 @@ acessaBancoNoServidor.connect((err) => {
     console.log('Conectado ao banco de dados MySQL!');
 });
 
-// Exportar a conexão para uso em outros módulos
+// Exportar para outros arquivos
 module.exports = acessaBancoNoServidor;
