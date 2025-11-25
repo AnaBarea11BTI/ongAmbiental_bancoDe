@@ -2,29 +2,40 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Atualizar Animal Resgatado</title>
+    <title>Editar Animais Resgatados</title>
 </head>
 <body>
 
-    <h1>Atualizar Animal Resgatado</h1>
+    <h1>Editar Animais Resgatados</h1>
 
-    <label>ID do Animal:</label><br>
-    <input id="id"><br><br>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Espécie</th>
+                <th>Local do Resgate</th>
+                <th>Estado de Saúde</th>
+                <th>Data do Resgate</th>
+                <th>Ação</th>
+            </tr>
+        </thead>
 
-    <label>Nova Espécie:</label><br>
-    <input id="especie"><br><br>
+        <tbody id="tabelaAnimais"></tbody>
+    </table>
 
-    <label>Novo Local do Resgate:</label><br>
-    <input id="local_resgate"><br><br>
+    <script src="AtualizarAnimaisResgatados.js"></script> <br><br>
 
-    <label>Novo Estado de Saúde:</label><br>
-    <input id="estado_saude"><br><br>
+    <button>
+        <a href="criarAnimaisResgatados.html">Cadastro</a>
+    </button> <br><br>
+    
+    <button>
+        <a href="buscarAnimaisResgatados.html">Ver lista</a>
+    </button> <br><br>
 
-    <label>Nova Data do Resgate:</label><br>
-    <input type="date" id="data_resgate"><br><br>
+    <button>
+        <a href="deletarAnimaisResgatados.html">Deletar</a>
+    </button> <br><br>
 
-    <button onclick="atualizarAnimal()">Atualizar</button>
-
-    <script src="AtualizarAnimaisResgatados.js"></script>
 </body>
 </html>

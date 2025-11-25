@@ -2,17 +2,40 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Deletar Animal Resgatado</title>
+    <title>Deletar Animais Resgatados</title>
 </head>
 <body>
 
-    <h1>Deletar Animal Resgatado</h1>
+    <h1>Deletar Animais Resgatados</h1>
 
-    <label>ID do Animal a Deletar:</label><br>
-    <input id="id"><br><br>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Espécie</th>
+                <th>Local do Resgate</th>
+                <th>Estado de Saúde</th>
+                <th>Data do Resgate</th>
+                <th>Ação</th>
+            </tr>
+        </thead>
 
-    <button onclick="deletarAnimal()">Deletar</button>
+        <tbody id="tabelaAnimais"></tbody>
+    </table>
+    
+    <script src="deletarAnimaisResgatados.js"></script> <br><br>
 
-    <script src="deletarAnimaisResgatados.js"></script>
+    <button>
+        <a href="criarAnimaisResgatados.html">Cadastro</a>
+    </button> <br><br>
+    
+    <button>
+        <a href="buscarAnimaisResgatados.html">Ver lista</a>
+    </button> <br><br>
+
+    <button>
+        <a href="AtualizarAnimaisResgatados.html">Editar</a>
+    </button> <br><br>
+
 </body>
 </html>
